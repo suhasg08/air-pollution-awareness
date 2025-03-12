@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.section {
+    background: #58d697;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+/* AQI Result Styling */
+#aqi-result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* AQI Color Coding */
+.good { background: #4CAF50; color:545ad2 ; }
+.moderate { background: #FFC107; color: black; }
+.unhealthy { background: #FF5722; color: white; }
+.hazardous { background: #D32F2F; color: white; }
+
+/* Footer */
+footer {
+    background: #2d3436;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

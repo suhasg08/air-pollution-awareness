@@ -1,0 +1,62 @@
+async function loadContent() {
+    try {
+        const response = await fetch("data.json");
+        const data = await response.json();
+
+        document.getElementById("title").innerText = data.title;
+
+        for (const section in data.sections) {
+            const sectionData = data.sections[section];
+            const sectionDiv = document.createElement("div");
+            sectionDiv.className = "section";
+
+            // Title
+            const titleElement = document.createElement("h2");
+            titleElement.innerText = sectionData.title;
+            sectionDiv.appendChild(titleElement);
+
+            // Content List
+            const contentList = document.createElement("ul");
+            sectionData.content.forEach(point => {
+                const listItem = document.createElement("li");
+                listItem.innerText = point;
+                contentList.appendChild(listItem);
+            });
+            sectionDiv.appendChild(contentList);
+
+            document.getElementById("content").appendChild(sectionDiv);
+        }
+    } catch (error) {
+        console.error("Error loading JSON:", error);
+    }
+}
+
+// Load content when the page loads
+window.onload = loadContent;
+async function getAQI() {
+    const city = document.getElementById("city").value.trim();
+    const resultDiv = document.getElementById("aqi-result");
+
+    if (city === "") {
+        resultDiv.innerHTML = "Please enter a city name.";
+        resultDiv.className = "";
+        return;
+    }
+
+    // Mock AQI data for popular cities
+    const mockAQIData = {
+        "New York": 55,   
+        "Delhi": 180,     
+        "Tokyo": 40,      
+        "London": 75,     
+        "Beijing": 200,   
+        "Los Angeles": 120 
+    };
+
+    // Get the AQI from mock data, or generate a random value if city not found
+    const aqi = mockAQIData[city] || Math.floor(Math.random() * 301);
+
+    resultDiv.innerHTML = `AQI for ${city}: <strong>${aqi}</strong>`;
+    resultDiv.className = getAQIColor(aqi);
+}
+
