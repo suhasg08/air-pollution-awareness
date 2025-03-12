@@ -1,0 +1,45 @@
+{
+  "title": "AIR POLLUTION AWARENESS",
+  "sections": {
+    "causes": {
+      "title": "Causes of Air Pollution",
+      "content": [
+        "Burning fossil fuels like coal, oil, and gas releases pollutants.",
+        "Industrial emissions contain harmful chemicals and particulate matter.",
+        "Deforestation reduces the ability to absorb carbon dioxide.",
+        "Agricultural activities release methane and ammonia gases.",
+        "Vehicle exhaust emits carbon monoxide and nitrogen oxides."
+      ]
+    },
+    "effects": {
+      "title": "Effects of Air Pollution",
+      "content": [
+        "Respiratory diseases such as asthma and bronchitis.",
+        "Cardiovascular issues due to prolonged exposure.",
+        "Acid rain affects soil and water quality.",
+        "Global warming caused by increased greenhouse gases.",
+        "Harmful effects on wildlife and ecosystems."
+      ]
+    },
+    "solutions": {
+      "title": "Solutions to Reduce Air Pollution",
+      "content": [
+        "Switch to renewable energy sources like solar and wind.",
+        "Implement strict emission control policies.",
+        "Promote public transportation and electric vehicles.",
+        "Encourage afforestation and reforestation programs.",
+        "Adopt sustainable agricultural practices."
+      ]
+    },
+    "global_statistics": {
+      "title": "Global Air Pollution Statistics",
+      "content": [
+        "9 out of 10 people worldwide breathe polluted air.",
+        "Air pollution causes approximately 7 million deaths annually.",
+        "Transportation contributes about 25% of global CO2 emissions.",
+        "Indoor air pollution is responsible for 3.8 million deaths yearly.",
+        "China, India, and the USA are the top three polluting countries."
+      ]
+    }
+  }
+}
